@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Information</title>
+<style>
+.news-demo {
+  padding: 20px;
+}
+
+.news-demo h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.news-demo .p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  margin-top: 70px;
+}
+
+.news-demo .p ~ p {
+  margin-top: 0;
+}
+
+.news-demo .p a {
+  text-decoration: underline;
+}
+
+.news-demo .p a:hover {
+  color: red;
+}
+
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+</style>
+<link rel="stylesheet" href="css/vertical.news.slider.css?v=1.0">
+</head>
+<body class="news-demo">
+<br>
+<br>
+<br>
+
+  <h1>Information</h1>
+
+  <div class="news-holder cf">
+
+    <ul class="news-headlines">
+      <li class="selected">PIN CODE SEARCH</li>
+      <li>SPEED POST</li>
+      <li>BANKING</li>
+      <li>INSURANCE</li>
+      <li>BUSINESS POST</li>
+      <li>LOGISTICS POST</li>
+	  <li>IMTS</li>
+      <!-- li.highlight gets inserted here -->
+    </ul>
+
+    <div class="news-preview">
+
+      <div class="news-content top-content">
+	  <img src="search.jpg">
+        <p><a href="#">PIN CODE SEARCH</a></p>
+        <P>Pincode or Office Name</P>
+	 	<div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+		</form>
+	<div class="tfclear"></div>
+	</div>
+     	
+ 
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="3.jpg">
+        <p><a href="#">SPEED POST</a></p>
+
+        <p>Enter item no.</p>
+		
+			 	<div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="Track" class="tfbutton">
+		</form>
+	<div class="tfclear"></div>
+	</div>
+		
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="banking.jpg">
+        <p><a href="#">BANKING</a></p>
+
+        <p></p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="insu.jpg">
+        <p><a href="#">INSURANCE</a></p>
+
+        <p></p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="3.jpg">
+        <p><a href="#">BUSINESS POST</a></p>
+        <p></p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+        <img src="3.jpg">
+        <p><a href="#">LOGISTICS POST</a></p>
+
+        <p></p>
+      </div><!-- .news-content -->
+	  
+	  <div class="news-content">
+        <img src="MoneyTranfer.jpg">
+        <p><a href="#">International Money Transfer Service</a></p>
+		
+
+      </div><!-- .news-content -->
+	  
+
+    </div><!-- .news-preview -->
+
+  </div><!-- .news-holder -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="js/vertical.news.slider.js"></script>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1965499-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>
